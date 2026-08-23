@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Deliberately unsandboxed: a system-wide overlay that stays on top of
+	     every Space does not fit the sandbox, and later phases observe system
+	     state. See README → "İzinler ve yetkiler". -->
+	<key>com.apple.security.app-sandbox</key>
+	<false/>
+</dict>
+</plist>

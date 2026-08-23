@@ -1,0 +1,20 @@
+# Xcode türevleri — bu depoda derlenmiş hiçbir şey durmaz.
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+
+# Üçüncü taraf ikililer.
+#
+# mediaremote-adapter BSD-3-Clause ile dağıtılıyor ve kaynaktan derleniyor;
+# ikilileri commit etmek yerine DynamicIsland/Vendor/README.md'deki adımlar
+# izlenir. Klasörün kendisi (ve README'si) depoda kalır.
+DynamicIsland/Vendor/*
+!DynamicIsland/Vendor/README.md
+
+# Simge üretilir: tools/make_icon.swift
+# (AppIcon.icns commit ediliyor, çünkü Xcode'da açar açmaz derlenebilsin.)

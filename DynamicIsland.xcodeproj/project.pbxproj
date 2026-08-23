@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017CC6F86454321D6D579F43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC7CAE7D0D0D827FDEDBF /* AppDelegate.swift */; };
+		08AE4FB8B1EB02DE8DE127DC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6D67E9A2F09AFBF1DADBE7 /* AppState.swift */; };
+		AFB1F68BBDCC91CD75562CA6 /* DynamicIslandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DEB84489F1D2D10501244F /* DynamicIslandApp.swift */; };
+		8414EB66F4DAB45383E33027 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF6A245991BBE1575D9CB4B /* Localization.swift */; };
+		56BDD31DC6286C1171B1A50D /* BatteryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11642AC81371BCD832C9916C /* BatteryMonitor.swift */; };
+		9BEEF575141F933C9FB5D8E9 /* BluetoothMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37984C84FA8684C29D15CB81 /* BluetoothMonitor.swift */; };
+		C166C9DD6FB3B4830C29CBB2 /* BrightnessMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1363DA3E521B77A7DCC56539 /* BrightnessMonitor.swift */; };
+		9E36C3C61397801378FB3874 /* CalendarMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4FCB7E896EAC22CF1424C /* CalendarMonitor.swift */; };
+		02EDA88683CBFC374C4334B8 /* DownloadMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F7ABA7AEB1CB95695883B5 /* DownloadMonitor.swift */; };
+		E30909C49FEC2FA4B8AA1CC6 /* DragMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A798429B48A998A8D7E7B3C /* DragMonitor.swift */; };
+		3F4A55FFA12DA2A635FFFE4E /* FullscreenDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77659D6C3391D1F6390B52EF /* FullscreenDetector.swift */; };
+		5310D2AD9937C683552F2BD1 /* MediaKeyMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2625E25FF3FD8F809C15144A /* MediaKeyMonitor.swift */; };
+		4525E1A512B6515158A59167 /* MediaRemoteAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAEADFF19E8F92EB3533C39 /* MediaRemoteAdapter.swift */; };
+		035E99D61A907B9B1165F2E7 /* NotchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530EB91C7F80B6EED90FA5B3 /* NotchDetector.swift */; };
+		AAF929D6C6220985C02EF4E7 /* NotificationMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FFCAF1E6F0902FEC837EB9 /* NotificationMonitor.swift */; };
+		0AEB6AF05F38DF8B15ADC03D /* NowPlayingMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21FB6D4902EDFD66361B15 /* NowPlayingMonitor.swift */; };
+		36164E3CFDA264698F1BBCE5 /* OverlayPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6FD39F64655D9C32B146BF /* OverlayPanel.swift */; };
+		96504E52E33C7EC38949F3DA /* PassthroughHostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9410CBC86815D93E5432EC /* PassthroughHostingView.swift */; };
+		E8116C331BAE7DC44D4667B7 /* PrivacyMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F8D7D6FD8DA1FFB7BD0F81 /* PrivacyMonitor.swift */; };
+		B263BAAA1FB4B972284D1C6B /* VolumeMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C48A52BCBECEB84D908594 /* VolumeMonitor.swift */; };
+		74FBE529A952ACE3F78D069D /* FileShelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63719606FE1C42198CD1BF7F /* FileShelf.swift */; };
+		CA89E2E9A6B68CA700DF06E9 /* IslandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025659CD6E268069BB5939DD /* IslandController.swift */; };
+		DAA8C8EDFC74CB2C28708DA7 /* IslandLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95511B551BF15B7FCA2A933 /* IslandLayout.swift */; };
+		99704BDA2FD84E303EE55E7C /* IslandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC0BB92189E0796C6CFBEB /* IslandModel.swift */; };
+		47ABA973090DFFA1C66760AE /* IslandPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518A23D998FB53EC955E97F /* IslandPayload.swift */; };
+		C6DAEF9AE6B0B85F48B72874 /* IslandTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A8A2D916054AB0DB3752B2 /* IslandTimer.swift */; };
+		092A785CB0818F78F021BC48 /* ArtworkPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE4CA916AC73ADBC423DE51 /* ArtworkPalette.swift */; };
+		E0F3551D83511CD95FF8A330 /* IslandComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC76543057BCE5B3F7AF71 /* IslandComponents.swift */; };
+		579A9A60208C6039DEE056C0 /* IslandPayloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA7A56A56674EB679275C4 /* IslandPayloads.swift */; };
+		44AC4F5B6269B57C156282C6 /* IslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7898DDED1DAC14A493287457 /* IslandView.swift */; };
+		A5A10A8F030E24AF14C22B27 /* MarqueeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3B3BA398302ECE985C3F2 /* MarqueeText.swift */; };
+		863BEF665F6012C40531A9F8 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E358D831E34CC7B4209749 /* MenuBarView.swift */; };
+		15CF39583401CEA2BE7DC17D /* NotchShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD892DC3F52DD49F892C31D4 /* NotchShape.swift */; };
+		BBD164B3835CD410C0B77CD7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674D2DB7A73D3CCFE9044CCD /* SettingsView.swift */; };
+		C000F9695C40F107CA688C77 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F9B1E4303D6253790EF852B7 /* AppIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5BF48AA40CAD7891EB709FC /* DynamicIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		783EC7CAE7D0D0D827FDEDBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA6D67E9A2F09AFBF1DADBE7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		69DEB84489F1D2D10501244F /* DynamicIslandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandApp.swift; sourceTree = "<group>"; };
+		CBF6A245991BBE1575D9CB4B /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		11642AC81371BCD832C9916C /* BatteryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryMonitor.swift; sourceTree = "<group>"; };
+		37984C84FA8684C29D15CB81 /* BluetoothMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothMonitor.swift; sourceTree = "<group>"; };
+		1363DA3E521B77A7DCC56539 /* BrightnessMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessMonitor.swift; sourceTree = "<group>"; };
+		2EA4FCB7E896EAC22CF1424C /* CalendarMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonitor.swift; sourceTree = "<group>"; };
+		26F7ABA7AEB1CB95695883B5 /* DownloadMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadMonitor.swift; sourceTree = "<group>"; };
+		2A798429B48A998A8D7E7B3C /* DragMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragMonitor.swift; sourceTree = "<group>"; };
+		77659D6C3391D1F6390B52EF /* FullscreenDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenDetector.swift; sourceTree = "<group>"; };
+		2625E25FF3FD8F809C15144A /* MediaKeyMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaKeyMonitor.swift; sourceTree = "<group>"; };
+		AEAEADFF19E8F92EB3533C39 /* MediaRemoteAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteAdapter.swift; sourceTree = "<group>"; };
+		530EB91C7F80B6EED90FA5B3 /* NotchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchDetector.swift; sourceTree = "<group>"; };
+		23FFCAF1E6F0902FEC837EB9 /* NotificationMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMonitor.swift; sourceTree = "<group>"; };
+		7C21FB6D4902EDFD66361B15 /* NowPlayingMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMonitor.swift; sourceTree = "<group>"; };
+		DA6FD39F64655D9C32B146BF /* OverlayPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPanel.swift; sourceTree = "<group>"; };
+		0A9410CBC86815D93E5432EC /* PassthroughHostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughHostingView.swift; sourceTree = "<group>"; };
+		97F8D7D6FD8DA1FFB7BD0F81 /* PrivacyMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyMonitor.swift; sourceTree = "<group>"; };
+		00C48A52BCBECEB84D908594 /* VolumeMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeMonitor.swift; sourceTree = "<group>"; };
+		63719606FE1C42198CD1BF7F /* FileShelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShelf.swift; sourceTree = "<group>"; };
+		025659CD6E268069BB5939DD /* IslandController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandController.swift; sourceTree = "<group>"; };
+		F95511B551BF15B7FCA2A933 /* IslandLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandLayout.swift; sourceTree = "<group>"; };
+		3CCC0BB92189E0796C6CFBEB /* IslandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandModel.swift; sourceTree = "<group>"; };
+		B518A23D998FB53EC955E97F /* IslandPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandPayload.swift; sourceTree = "<group>"; };
+		C7A8A2D916054AB0DB3752B2 /* IslandTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandTimer.swift; sourceTree = "<group>"; };
+		6FE4CA916AC73ADBC423DE51 /* ArtworkPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkPalette.swift; sourceTree = "<group>"; };
+		0AFC76543057BCE5B3F7AF71 /* IslandComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandComponents.swift; sourceTree = "<group>"; };
+		E2FA7A56A56674EB679275C4 /* IslandPayloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandPayloads.swift; sourceTree = "<group>"; };
+		7898DDED1DAC14A493287457 /* IslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandView.swift; sourceTree = "<group>"; };
+		1CD3B3BA398302ECE985C3F2 /* MarqueeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeText.swift; sourceTree = "<group>"; };
+		04E358D831E34CC7B4209749 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		FD892DC3F52DD49F892C31D4 /* NotchShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchShape.swift; sourceTree = "<group>"; };
+		674D2DB7A73D3CCFE9044CCD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E17880A312A4AE0F1F118119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C770A97E58B9018B3A33E5D2 /* DynamicIsland.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DynamicIsland.entitlements; sourceTree = "<group>"; };
+		F9B1E4303D6253790EF852B7 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424153ED3CD079DB4DB459AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DA81DB9B99529C0C0AEBE = {
+			isa = PBXGroup;
+			children = (
+				2B6CC44DDE5F8ED59F322FC5 /* DynamicIsland */,
+				2F3A6B1E78F896718625FF06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F3A6B1E78F896718625FF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5BF48AA40CAD7891EB709FC /* DynamicIsland.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B6CC44DDE5F8ED59F322FC5 /* DynamicIsland */ = {
+			isa = PBXGroup;
+			children = (
+				D1D0524B025E57AFFF263442 /* App */,
+				1B056D60941E8BFAD902027D /* System */,
+				3A1B51DD1229D461DC51D770 /* Island */,
+				C71E237AED0167A15E00637D /* UI */,
+				D0CA17BBA4161446FC3D6EE6 /* Settings */,
+				887A6F90336FF23D95C3914B /* Resources */,
+			);
+			path = DynamicIsland;
+			sourceTree = "<group>";
+		};
+		D1D0524B025E57AFFF263442 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				783EC7CAE7D0D0D827FDEDBF /* AppDelegate.swift */,
+				CA6D67E9A2F09AFBF1DADBE7 /* AppState.swift */,
+				69DEB84489F1D2D10501244F /* DynamicIslandApp.swift */,
+				CBF6A245991BBE1575D9CB4B /* Localization.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1B056D60941E8BFAD902027D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				11642AC81371BCD832C9916C /* BatteryMonitor.swift */,
+				37984C84FA8684C29D15CB81 /* BluetoothMonitor.swift */,
+				1363DA3E521B77A7DCC56539 /* BrightnessMonitor.swift */,
+				2EA4FCB7E896EAC22CF1424C /* CalendarMonitor.swift */,
+				26F7ABA7AEB1CB95695883B5 /* DownloadMonitor.swift */,
+				2A798429B48A998A8D7E7B3C /* DragMonitor.swift */,
+				77659D6C3391D1F6390B52EF /* FullscreenDetector.swift */,
+				2625E25FF3FD8F809C15144A /* MediaKeyMonitor.swift */,
+				AEAEADFF19E8F92EB3533C39 /* MediaRemoteAdapter.swift */,
+				530EB91C7F80B6EED90FA5B3 /* NotchDetector.swift */,
+				23FFCAF1E6F0902FEC837EB9 /* NotificationMonitor.swift */,
+				7C21FB6D4902EDFD66361B15 /* NowPlayingMonitor.swift */,
+				DA6FD39F64655D9C32B146BF /* OverlayPanel.swift */,
+				0A9410CBC86815D93E5432EC /* PassthroughHostingView.swift */,
+				97F8D7D6FD8DA1FFB7BD0F81 /* PrivacyMonitor.swift */,
+				00C48A52BCBECEB84D908594 /* VolumeMonitor.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		3A1B51DD1229D461DC51D770 /* Island */ = {
+			isa = PBXGroup;
+			children = (
+				63719606FE1C42198CD1BF7F /* FileShelf.swift */,
+				025659CD6E268069BB5939DD /* IslandController.swift */,
+				F95511B551BF15B7FCA2A933 /* IslandLayout.swift */,
+				3CCC0BB92189E0796C6CFBEB /* IslandModel.swift */,
+				B518A23D998FB53EC955E97F /* IslandPayload.swift */,
+				C7A8A2D916054AB0DB3752B2 /* IslandTimer.swift */,
+			);
+			path = Island;
+			sourceTree = "<group>";
+		};
+		C71E237AED0167A15E00637D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6FE4CA916AC73ADBC423DE51 /* ArtworkPalette.swift */,
+				0AFC76543057BCE5B3F7AF71 /* IslandComponents.swift */,
+				E2FA7A56A56674EB679275C4 /* IslandPayloads.swift */,
+				7898DDED1DAC14A493287457 /* IslandView.swift */,
+				1CD3B3BA398302ECE985C3F2 /* MarqueeText.swift */,
+				04E358D831E34CC7B4209749 /* MenuBarView.swift */,
+				FD892DC3F52DD49F892C31D4 /* NotchShape.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D0CA17BBA4161446FC3D6EE6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				674D2DB7A73D3CCFE9044CCD /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		887A6F90336FF23D95C3914B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E17880A312A4AE0F1F118119 /* Info.plist */,
+				C770A97E58B9018B3A33E5D2 /* DynamicIsland.entitlements */,
+				F9B1E4303D6253790EF852B7 /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* DynamicIsland */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354589B28580510B6EC24620;
+			buildPhases = (
+				7A70D71C385290AF96BF1031 /* Sources */,
+				424153ED3CD079DB4DB459AF /* Frameworks */,
+				285BB1C1430063331E9F5DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicIsland;
+			productName = DynamicIsland;
+			productReference = F5BF48AA40CAD7891EB709FC /* DynamicIsland.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1F4E3D13C2320EDA50221924;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518DA81DB9B99529C0C0AEBE;
+			productRefGroup = 2F3A6B1E78F896718625FF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* DynamicIsland */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		285BB1C1430063331E9F5DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C000F9695C40F107CA688C77 /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A70D71C385290AF96BF1031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017CC6F86454321D6D579F43 /* AppDelegate.swift in Sources */,
+				08AE4FB8B1EB02DE8DE127DC /* AppState.swift in Sources */,
+				AFB1F68BBDCC91CD75562CA6 /* DynamicIslandApp.swift in Sources */,
+				8414EB66F4DAB45383E33027 /* Localization.swift in Sources */,
+				56BDD31DC6286C1171B1A50D /* BatteryMonitor.swift in Sources */,
+				9BEEF575141F933C9FB5D8E9 /* BluetoothMonitor.swift in Sources */,
+				C166C9DD6FB3B4830C29CBB2 /* BrightnessMonitor.swift in Sources */,
+				9E36C3C61397801378FB3874 /* CalendarMonitor.swift in Sources */,
+				02EDA88683CBFC374C4334B8 /* DownloadMonitor.swift in Sources */,
+				E30909C49FEC2FA4B8AA1CC6 /* DragMonitor.swift in Sources */,
+				3F4A55FFA12DA2A635FFFE4E /* FullscreenDetector.swift in Sources */,
+				5310D2AD9937C683552F2BD1 /* MediaKeyMonitor.swift in Sources */,
+				4525E1A512B6515158A59167 /* MediaRemoteAdapter.swift in Sources */,
+				035E99D61A907B9B1165F2E7 /* NotchDetector.swift in Sources */,
+				AAF929D6C6220985C02EF4E7 /* NotificationMonitor.swift in Sources */,
+				0AEB6AF05F38DF8B15ADC03D /* NowPlayingMonitor.swift in Sources */,
+				36164E3CFDA264698F1BBCE5 /* OverlayPanel.swift in Sources */,
+				96504E52E33C7EC38949F3DA /* PassthroughHostingView.swift in Sources */,
+				E8116C331BAE7DC44D4667B7 /* PrivacyMonitor.swift in Sources */,
+				B263BAAA1FB4B972284D1C6B /* VolumeMonitor.swift in Sources */,
+				74FBE529A952ACE3F78D069D /* FileShelf.swift in Sources */,
+				CA89E2E9A6B68CA700DF06E9 /* IslandController.swift in Sources */,
+				DAA8C8EDFC74CB2C28708DA7 /* IslandLayout.swift in Sources */,
+				99704BDA2FD84E303EE55E7C /* IslandModel.swift in Sources */,
+				47ABA973090DFFA1C66760AE /* IslandPayload.swift in Sources */,
+				C6DAEF9AE6B0B85F48B72874 /* IslandTimer.swift in Sources */,
+				092A785CB0818F78F021BC48 /* ArtworkPalette.swift in Sources */,
+				E0F3551D83511CD95FF8A330 /* IslandComponents.swift in Sources */,
+				579A9A60208C6039DEE056C0 /* IslandPayloads.swift in Sources */,
+				44AC4F5B6269B57C156282C6 /* IslandView.swift in Sources */,
+				A5A10A8F030E24AF14C22B27 /* MarqueeText.swift in Sources */,
+				863BEF665F6012C40531A9F8 /* MenuBarView.swift in Sources */,
+				15CF39583401CEA2BE7DC17D /* NotchShape.swift in Sources */,
+				BBD164B3835CD410C0B77CD7 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A43692AD8BCEEB8B727C85B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C28449456A5A705A7479770B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4D8F6610AF6606489ED8DFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DynamicIsland/Resources/DynamicIsland.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DynamicIsland/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abacusisland.dynamicisland;
+				PRODUCT_NAME = "Dinamik Ada";
+				PRODUCT_MODULE_NAME = DynamicIsland;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DDF142C91E4BE3A6BA5A69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DynamicIsland/Resources/DynamicIsland.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DynamicIsland/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abacusisland.dynamicisland;
+				PRODUCT_NAME = "Dinamik Ada";
+				PRODUCT_MODULE_NAME = DynamicIsland;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4E3D13C2320EDA50221924 /* Build configuration list for PBXProject "DynamicIsland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A43692AD8BCEEB8B727C85B /* Debug */,
+				C28449456A5A705A7479770B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		354589B28580510B6EC24620 /* Build configuration list for PBXNativeTarget "DynamicIsland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D8F6610AF6606489ED8DFBC /* Debug */,
+				3DDF142C91E4BE3A6BA5A69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
