@@ -1,0 +1,68 @@
+# Dinamik Ada Windows sürümünü derler.
+#
+# Her push ve PR'da Windows/ altındaki kodun derlendiğini doğrular ve
+# x64 / ARM64 için tek dosyalık DinamikAda.exe'yi artefakt olarak saklar.
+# v* etiketi itildiğinde zip'leri o sürümün Releases sayfasına ekler.
+name: Windows
+
+on:
+  push:
+    branches: ["**"]
+    tags: ["v*"]
+    paths:
+      - "Windows/**"
+      - ".github/workflows/windows.yml"
+  pull_request:
+    paths:
+      - "Windows/**"
+      - ".github/workflows/windows.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        rid: [win-x64, win-arm64]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Derle (uyarılar hata sayılır)
+        run: dotnet build Windows/DinamikAda.Windows.csproj -c Release -warnaserror
+
+      - name: Tek dosyalık yayın
+        run: dotnet publish Windows/DinamikAda.Windows.csproj -c Release -r ${{ matrix.rid }} -o publish/${{ matrix.rid }}
+
+      - name: Paketle
+        shell: pwsh
+        run: |
+          Copy-Item LICENSE publish/${{ matrix.rid }}/LICENSE.txt
+          Compress-Archive -Path publish/${{ matrix.rid }}/* -DestinationPath DinamikAda-Windows-${{ matrix.rid }}.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: DinamikAda-Windows-${{ matrix.rid }}
+          path: DinamikAda-Windows-${{ matrix.rid }}.zip
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip

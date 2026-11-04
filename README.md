@@ -14,6 +14,10 @@ ekran seçimini ve bildirim aynasını ekler. **Faz 6** sistemin yerine geçmeye
 çalışır: sistem geneli Now Playing (tarayıcı medyası dahil), sistem HUD'unun
 yerini alma, tam ekranda çekilme, indirme etkinliği ve Raf 2.0.
 
+> 🪟 **Windows kullanıcısı mısın?** Aynı uygulamanın Windows 10/11 sürümü
+> [`Windows/`](Windows/) klasöründe (C# + WPF, .NET 10). Kurulum ve Windows'a özgü
+> farklar: [Windows/README.md](Windows/README.md)
+
 ### Üç durumun adı
 
 Bu belgede ve konuşurken kullanılan adlar:
@@ -708,6 +712,9 @@ dynamic_island_mac/
 └── tools/
     ├── generate_pbxproj.py          project.pbxproj'ü yeniden üretir (Xcode gerekmez)
     └── make_icon.swift              AppIcon.icns'i çizer
+
+Windows/                         Windows 10/11 sürümü (C# + WPF) — ayrıntı: Windows/README.md
+.github/workflows/windows.yml    Windows sürümünü derler, etiketlerde Releases'e ekler
 ```
 
 ---
