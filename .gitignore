@@ -18,3 +18,8 @@ DynamicIsland/Vendor/*
 
 # Simge üretilir: tools/make_icon.swift
 # (AppIcon.icns commit ediliyor, çünkü Xcode'da açar açmaz derlenebilsin.)
+
+# Windows sürümü (.NET)
+Windows/bin/
+Windows/obj/
+*.user
